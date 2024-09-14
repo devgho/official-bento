@@ -1,19 +1,5 @@
 <template>
-  <div>
-    <Header />
-    <section id="projects">
-      <h1>Projects</h1>
-      <div class="projects-container">
-        <ProjectCard
-          v-for="project in projects"
-          :key="project.title"
-          :image="project.image"
-          :title="project.title"
-          :description="project.description"
-        />
-      </div>
-    </section>
-    <Footer />
+  <div class=" w-full h-full bg-red-400">
   </div>
 </template>
 
