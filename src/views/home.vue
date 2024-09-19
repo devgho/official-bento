@@ -1,29 +1,19 @@
 <template>
+  <div>
+
+  </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
+<script>
+export default {
+  setup () {
+    
 
-export default defineComponent({
-  data() {
-    return {
-      projects: [
-        {
-          image: 'path/to/image1.jpg',
-          title: 'Project 1',
-          description: 'Description of Project 1'
-        },
-        {
-          image: 'path/to/image2.jpg',
-          title: 'Project 2',
-          description: 'Description of Project 2'
-        }
-        // Add more projects as needed
-      ]
-    };
+    return {}
   }
-});
+}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+
 </style>
