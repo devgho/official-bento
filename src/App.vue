@@ -3,7 +3,7 @@
   <RouterView />
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent } from 'vue';
 import "./style.css"
 import Mynav from './components/mynav.vue';
