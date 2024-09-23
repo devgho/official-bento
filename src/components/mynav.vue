@@ -1,8 +1,7 @@
 <template>
-  <div class=" flex w-full items-center justify-between px-6 pt-8">
+  <div class=" flex w-full items-center justify-between px-[3.5vw] pt-8">
     <div class="w-24">
       <img class="" src="../assets/logo_trans.png" alt="">
-      
     </div>
     <nav class=" flex space-x-4">
       <el-radio-group v-model="tabPosition" fill="white" size="large" >
@@ -11,22 +10,23 @@
         <el-radio-button value="bottom">作品</el-radio-button>
         <el-radio-button value="left">价格</el-radio-button>
       </el-radio-group>
+      <el-button type="" size="" @click=""></el-button>
     </nav>
-    <div>
+    <div class=" cursor-pointer">
       联系我们
     </div>
   </div>
 
 </template>
-<script type="ts">
-import { defineComponent } from 'vue';
+<script>
+import { ElLink } from 'element-plus';
+import { defineComponent, ref } from 'vue';
+
 export default defineComponent({
-  name: 'MyNav',
-  data() {
-    return {
-      tabPosition: 'top'
-    }
-  }
-})
+ setup(){
+  const tabPosition = ref('top')
+  return {tabPosition}
+ }
+});
 </script>
 <style scoped></style>
